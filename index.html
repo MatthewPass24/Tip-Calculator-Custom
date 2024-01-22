@@ -41,10 +41,26 @@
                         <!--Dropdown for Service Quality-->
                         <label for="serviceQuality" class="form-label">Service Quality:</label>
                         <select id="servicequality" class="form-select">
-                            
+                            <option value="Great">Great</option>
+                            <option value="Good">Good</option>
+                            <option value="Poor">Poor</option>
                         </select>
                     </div>
+                    <div class="col-md-6 mt-4">
+                        <!--Button to trigger the calculation-->
+                        <button class="btn btn-outline-primary" onclick="calculateAndDisplay()">Calculate Tip</button>
+                    </div>
                 </div>
+                <div class="row mt-4">
+                    <div class="col-md-12">
+                        <!--Results Section-->
+                        <h4>Results:</h4>
+                        <p id="tipResult"></p>
+                        <p id="totalBillResult"></p>
+                        <p id="amtPerPersonResult"></p>
+                    </div>
+                </div>
+                
             </div>
         </main>
         <footer>
